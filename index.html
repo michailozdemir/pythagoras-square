@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квадрат Пифагора</title>
+    <link type="text/css" rel="stylesheet" href="/reset.css">
+    <link type="text/css" rel="stylesheet" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js" integrity="sha512-sR3EKGp4SG8zs7B0MEUxDeq8rw9wsuGVYNfbbO/GLCJ59LBE4baEfQBVsP2Y/h2n8M19YV1mujFANO1yA3ko7Q==" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<section class="calc-form">
+  <h1 class="calc-form__title">Введите дату рождения</h1>
+  <div class="calc-form__form">
+    <input type="text" class="calc-form__form-input" name="date" placeholder="дд.мм.гггг">
+    <button class="calc-form__form-btn">Рассчитать</button>
+  </div>
+</section>
+    
+
+<div id="calc" class="square-calc">
+    <div class="square-calc__birth-date">День рождения: <div class="square-calc__birth-date-number"></div></div>
+    <div class="square-calc__numbers">Доп. числа: <div class="square-calc__numbers-value"></div></div>
+    <div class="square-calc__faith-number">Число Судьбы: <div class="square-calc__faith-number-value"></div></div>
+  
+    <div class="square-calc__wrapper">
+  
+      <div class="square-calc__left">
+        <div class="square-calc__table">
+          <div class="square-calc__table-item">
+            <div class="square-calc__table-value square-calc__table-value--char">-</div>
+            характер
+          </div>
+          <div class="square-calc__table-item">
+            <div class="square-calc__table-value square-calc__table-value--health">-</div>
+            здоровье
+          </div>
+          <div class="square-calc__table-item">
+            <div class="square-calc__table-value square-calc__table-value--luck">-</div>
+            удача
+          </div>
+          <div class="square-calc__table-item">
+            <div class="square-calc__table-value square-calc__table-value--energy">-</div>
+            энергия
+          </div>
+          <div class="square-calc__table-item">
+            <div class="square-calc__table-value square-calc__table-value--logic">-</div>
+            логика
+          </div>
+          <div class="square-calc__table-item">
+            <div class="square-calc__table-value square-calc__table-value--debt">-</div>
+            долг
+          </div>
+          <div class="square-calc__table-item">
+            <div class="square-calc__table-value square-calc__table-value--interest">-</div>
+            интерес
+          </div>
+          <div class="square-calc__table-item">
+            <div class="square-calc__table-value square-calc__table-value--labor">-</div>
+            труд
+          </div>
+          <div class="square-calc__table-item">
+            <div class="square-calc__table-value square-calc__table-value--memory">-</div>
+            память
+          </div>
+        </div>
+      </div>
+  
+      <div class="square-calc__sidebar">
+        <div class="square-calc__sidebar-item">
+          <div class="square-calc__sidebar-value square-calc__sidebar-value--target">-</div>
+          цель
+        </div>
+        <div class="square-calc__sidebar-item">
+          <div class="square-calc__sidebar-value square-calc__sidebar-value--family">-</div>
+          семья
+        </div>
+        <div class="square-calc__sidebar-item">
+          <div class="square-calc__sidebar-value square-calc__sidebar-value--habits">-</div>
+          привычки
+        </div>
+      </div>
+  
+      <div class="square-calc__bottom">
+        <div class="square-calc__bottom-wrapper">
+          <div class="square-calc__bottom-item">
+            <div class="square-calc__bottom-value square-calc__bottom-value--esteem">-</div>
+            самооценка
+          </div>
+          <div class="square-calc__bottom-item">
+            <div class="square-calc__bottom-value square-calc__bottom-value--work">-</div>
+            работа
+          </div>
+          <div class="square-calc__bottom-item">
+            <div class="square-calc__bottom-value square-calc__bottom-value--talent">-</div>
+            талант
+          </div>
+        </div>
+        <div class="square-calc__bottom-item square-calc__bottom-item--single">
+          <div class="square-calc__bottom-value-wrapper">
+            <div class="square-calc__bottom-value square-calc__bottom-value--spirit">-</div>/<div class="square-calc__bottom-value square-calc__bottom-value--temper">-</div>
+          </div>
+          дух/темперамент
+        </div>
+      </div>
+    </div>
+    
+        <div class="square-calc__copy">
+          <h3 class="square-calc__copy-title">Нажмите на поле ниже, что бы скопировать данные</h3>
+          <input class="square-calc__copy-input t-input" type="text" readonly>
+          <span class="square-calc__copy-label">Данные скопированы</span>
+      </div>
+  </div>
+  
+    <script src="/script.js"></script>
+</body>
+</html>
