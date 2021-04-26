@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
   --text-color: #000;
@@ -9,7 +10,7 @@
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   color: var(--text-color);
   background: var(--bg-color);
@@ -22,7 +23,9 @@ body {
 
 .calc-form__title {
   margin-bottom: 40px;
+  font-family: 'Lobster', sans-serif;
   font-size: 36px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -103,6 +106,7 @@ body {
   min-height: 60px;
   margin-top: 30px;
   padding: 0 50px;
+  font-family: 'Lobster', sans-serif;
   font-size: 18px;
   line-height: 1.2;
   border-radius: 50px;
@@ -129,8 +133,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 15px;
-  font-size: 18px;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
   text-align: center;
   border: 1px solid rgba(0,0,0,0.07);
   color: #555;
@@ -155,8 +160,9 @@ body {
           justify-content: center;
   width: 150px;
   padding: 15px;
-  font-size: 18px;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
   text-align: center;
   color: #555;
   border: 1px solid rgba(0,0,0,0.07);
@@ -168,7 +174,7 @@ body {
   padding: 60px 15px;
   max-width: 650px;
   margin: 0 auto;
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .square-calc__copy {
@@ -178,6 +184,8 @@ body {
 
 .square-calc__copy-title {
   margin-bottom: 10px;
+  font-family: 'Lobster', sans-serif;
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -186,6 +194,7 @@ body {
   max-width: 300px;
   height: 45px;
   margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   border: 1px solid rgba(0,0,0,.07);
   border-radius: 5px;
@@ -206,7 +215,7 @@ body {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .square-calc {
     max-width: 100%;
   }
@@ -218,15 +227,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .square-calc__birth-date {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .square-calc__numbers {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .square-calc__faith-number {
@@ -250,9 +260,12 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: -70px;
 }
 
 .square-calc__left {
+  display: flex;
+  flex-direction: column;
   margin-right: 20px;
 }
 
@@ -270,13 +283,14 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 450px;
+  margin-top: auto;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .square-calc__table-item {
     padding: 10px;
     width: 33.333%;
-    font-size: 14px;
+    font-size: 9px;
   }
 }
 
@@ -298,11 +312,21 @@ body {
   color: #000;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .square-calc__table-value,
   .square-calc__sidebar-value,
   .square-calc__bottom-value {
-    font-size: 18px;
+    font-size: 14px;
+  }
+}
+
+.square-calc__sidebar-item--spirit {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) { 
+  .square-calc__sidebar-item--spirit {
+    margin-top: 5px;
   }
 }
 
@@ -311,13 +335,13 @@ body {
   width: 100%;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .square-calc__sidebar {
     max-width: 30%;
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .square-calc__sidebar-item {
     width: 100%;
   }
@@ -325,7 +349,7 @@ body {
   .square-calc__sidebar-item,
   .square-calc__bottom-item {
     padding: 10px;
-    font-size: 13px;
+    font-size: 9px;
     word-break: break-word;
     -ms-hyphens: auto;
         hyphens: auto;
@@ -349,7 +373,7 @@ body {
   margin-top: 20px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .square-calc__bottom {
     margin-top: 5px;
   }
@@ -362,15 +386,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  max-width: 450px;
-  margin-right: 20px;
-}
-
-@media (max-width: 760px) {
-  .square-calc__bottom-wrapper {
-    max-width: calc(70% - 10px);
-    margin-right: 10px;
-  }
 }
 
 .square-calc__bottom-value-wrapper .square-calc__bottom-value {
@@ -381,7 +396,7 @@ body {
   width: 150px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .square-calc__bottom-item {
     width: 33.333%;
   }
